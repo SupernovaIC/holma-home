@@ -1,1 +1,4 @@
-<iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms" [style.height.px]="height" [src]="url | safe" scrolling="no"></iframe>
+<iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms" (error)="failLoading()" [style.height.px]="height" [src]="url | safe" scrolling="no" [hidden]="visibilityFrame"></iframe>
+<div class="container-fluid text-center" [hidden]="visibilityError">
+  <h1 translate>errorMsg</h1>
+</div>

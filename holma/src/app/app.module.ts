@@ -6,12 +6,14 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { GetQuoteComponent } from './get-quote/get-quote.component';
 import { SafePipe } from './common/pipes/safe-pipe.pipe';
+import { ContactusComponent } from './contactus/contactus.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GetQuoteComponent,
-    SafePipe
+    SafePipe,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,
